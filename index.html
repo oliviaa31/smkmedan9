@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&display=swap" rel="stylesheet">
+    <title>SMKN 9 Medan</title>
+    <style>
+     .container-fluid {
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+ 
+
+.container-fluid .navbar {
+  background-color: #ffffff;
+  width: 85%;
+  position: absolute;
+  top: 5vh;
+  z-index: 1000;
+  border-radius: 20px;
+  padding: 1vh 5vw;
+  left: 8vw;
+  
+}
+
+.container-fluid .navbar .navbar-brand img {
+  width: 60px;
+  height: 57.41px;
+}
+
+.container-fluid .navbar-expand-lg .navbar-nav .nav-item {
+  margin: 0 1vw;
+}
+
+.container-fluid .navbar-expand-lg .navbar-nav .nav-link {
+  color: #000000;
+}
+
+.container-fluid .navbar-expand-lg .navbar-nav .form-inline .search {
+  background-color: #e8e8e8;
+  border: none;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 1vh 2vw;
+  height: 40px;
+}
+
+.container-fluid .navbar-expand-lg .navbar-nav .form-inline .btn-search {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin: 0 1vw;
+}
+
+.carousel-background-1 {
+  background: url("lt4.jpg") no-repeat;
+  height: 800px;
+  background-size: 100% 100%;
+}
+.carousel-background-2 {
+  background: url("piketg.jpg") no-repeat;
+  height: 800px;
+  background-size: 100% 100%;
+}
+
+.carousel-inner {
+  text-transform: capitalize;
+}
+
+.carousel .carousel-inner .carousel-item .wrapper {
+  min-height: 85vh;
+  max-height: 85vh;
+  padding: 25vh 20vw;
+  color: #ffffff;
+}
+
+.carousel .carousel-inner .carousel-item .wrapper h1 {
+  width: 35vw;
+  line-height: 55px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.container-fluid .feature {
+  padding: 10vh 10vw;
+}
+
+.container-fluid .feature .row .feature-item {
+  padding: 0 2vw;
+}
+
+.container-fluid .feature .row .feature-item .feature-content .feature-title {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  font-weight: 600;
+  color: #0573ab;
+  margin: 4vh 0;
+  line-height: 30px;
+}
+
+.container-fluid
+  .feature
+  .row
+  .feature-item
+  .feature-content
+  .feature-description {
+  line-height: 25px;
+}
+
+.container-fluid .facilities {
+  padding: 0 10vw 10vh 10vw;
+}
+
+.container-fluid .facilities .row .facilities-text .title {
+  font-family: "Poppins", sans-serif;
+  color: #0573ab;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.container-fluid .facilities .row .facilities-item .carousel .carousel-inner {
+  padding: 0 8vw;
+}
+
+.container-fluid
+  .facilities
+  .row
+  .facilities-item
+  .carousel
+  .carousel-indicators {
+  position: relative;
+  top: 65vh;
+}
+
+.container-fluid
+  .facilities
+  .row
+  .facilities-item
+  .carousel
+  .carousel-indicators
+  li {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: solid 2px #0573ab;
+}
+
+.container-fluid
+  .facilities
+  .row
+  .facilities-item
+  .carousel
+  .carousel-indicators
+  .active {
+  background-color: #0573ab;
+}
+
+.container-fluid .facilities .row .facilities-item .facilities-content {
+  border: solid 2px #0573ab;
+  border-radius: 10px;
+}
+
+.container-fluid
+  .facilities
+  .row
+  .facilities-item
+  .facilities-content
+  .facilities-img {
+  width: 100%;
+  height: 200px;
+}
+
+.container-fluid .facilities .row .facilities-item .facilities-content h5 {
+  font-weight: 500;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  color: #0573ab;
+  margin: 3vh 0;
+}
+
+.container-fluid .facilities .row .facilities-item .facilities-content p {
+  padding: 0 2vw;
+}
+
+.container-fluid .news {
+  padding: 10vh 10vw;
+}
+
+.container-fluid .news h4 {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  text-transform: capitalize;
+  font-weight: 600;
+  color: #0573ab;
+}
+
+.container-fluid .news .subtitle {
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.container-fluid .news .row {
+  margin: 8vh 0;
+}
+
+.container-fluid .news .row .news-item .news-content img {
+  width: 100%;
+}
+
+.container-fluid .news .row .news-item .news-content h4 {
+  color: #0573ab;
+  font-weight: 600;
+  margin: 5vh 0;
+  font-size: 20px;
+  text-align: left;
+  line-height: 30px;
+  min-height: 60px;
+}
+
+.container-fluid .news .row .news-item .news-content p {
+  line-height: 25px;
+}
+
+.container-fluid .news .row .news-item .news-content .date,
+.container-fluid .news .row .news-item .news-content .read-time {
+  color: #515151;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+.container-fluid .news .row .news-item .news-content .read-time {
+  float: right;
+}
+
+.container-fluid .gallery {
+  padding: 10vh 0;
+  background-color: #185b7d;
+  color: white;
+  height: 750px;
+}
+
+.container-fluid .gallery h4 {
+  font-family: "Poppins";
+  font-weight: 600;
+  text-transform: capitalize;
+  text-align: center;
+}
+.container-fluid .gallery .gallery-content {
+  margin: 10vh 10vw 0 10vh;
+}
+
+.container-fluid .gallery .gallery-content .gallery-item .wrapper h4 {
+  line-height: 150%;
+}
+
+.container-fluid .gallery .wave {
+  position: relative;
+  top: -200px;
+}
+
+.container-fluid .contact {
+    margin: 10vh 0 0 0;
+}
+
+.container-fluid .contact .row {
+ margin: 0 !important;
+}
+
+.container-fluid .contact .row .contact-item {
+    padding: 0 5vw;
+    text-transform: capitalize;
+}
+
+.container-fluid .contact .row .contact-item h4 {
+    color: #0573ab;
+    font-weight: 600;
+    text-transform: capitalize;    
+    font-family: "Poppins", sans-serif;
+}   
+
+.container-fluid .contact .row .contact-item .row {
+    margin: 5vh 0 !important;
+}
+
+.container-fluid .contact .row .contact-item .row  form .form-control {
+    border: none;
+    background-color: #e8e8e8;
+    height: 50px;
+    padding: 0 2vw;
+}
+
+.container-fluid .contact .row .contact-item .row  form textarea {
+    padding-top: 2vw !important;
+    height: 150px !important;
+}
+
+.container-fluid .contact .row .contact-item .row .btn-contact {
+  width: 100%;
+  background-color: #0573ab;
+  border: none;
+  color: #ffffff;
+  padding: 2vh 0;
+  cursor: pointer
+}
+
+.container-fluid .contact .row .contact-item .row .social-media-info {
+  text-transform: none;
+}
+
+.container-fluid .contact .row .contact-item .row .social-media-info .iconify {
+   margin-top: 0vh;;
+}
+
+.container-fluid .contact .row  .contact-maps {
+  padding: 0;
+}
+
+.container-fluid .contact .row  .contact-maps .location-detail {
+  background-color: #ffffff;
+  width: 80%;
+  position: relative;
+  top: -400px;
+  left: 50px;
+}
+
+.container-fluid .contact .row  .contact-maps .location-detail .row .image {
+  padding: 0;
+}
+
+.container-fluid .contact .row  .contact-maps .location-detail .row .image img {
+  width: 100%;
+  height: 110px;
+}
+
+.container-fluid .contact .row  .contact-maps .location-detail .row .location-name {
+  padding: 2vh 2vw;
+}
+
+.container-fluid .contact .row  .contact-maps .location-detail .row .location-guide .get-guide {
+  background-color: #0573ab;
+  margin: 5vh 0;
+  color: #ffffff;
+  text-align: center;
+  cursor: pointer;
+  padding: 0.5vh 0;
+}
+
+.container-fluid .contact .row  .contact-maps .location-detail .row .location-guide .get-guide p {
+  margin: 1vh 0;
+}
+
+.container-fluid footer {
+  background-color: #0573ab; 
+  padding: 10vh 10vw;
+  color: #ffffff; 
+  text-transform: capitalize;
+  font-family: "Poppins", sans-serif;
+}
+
+.container-fluid footer h5 {
+  margin-bottom: 3vh;
+}
+.container-fluid footer a {
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+  margin: 1vh 0;
+}
+
+.container-fluid footer a:hover {
+  text-decoration: underline;
+} 
+
+.container-fluid footer .credit {
+  margin-top: 10vh;
+  text-align: center;
+}
+
+.container-fluid footer .credit-link {
+  display: inline  !important;
+}
+
+@media only screen and (max-width: 575px) {
+  .navbar-nav {
+    margin: 5vh 0;
+    color: white;
+  }
+
+  .container-fluid .navbar-expand-lg .navbar-nav .nav-item {
+    margin: 1vh 0;
+    color: white;
+  }
+
+  .carousel-background-1 {
+    height: 700px;
+  }
+  .carousel-background-2 {
+    height: 700px;
+  }
+  
+  .carousel .carousel-inner .carousel-item .wrapper h1 {
+    font-size: 30px;
+    line-height: 150%;
+    width: 100%;
+  }
+
+  .feature .row .feature-item {
+    margin-bottom: 5vh;
+  }
+
+  .facilities .row .facilities-item .carousel .carousel-indicators {
+    top: 30vh !important;
+  }
+
+  .facilities .row .facilities-item .carousel .carousel-control-prev, .facilities .row .facilities-item .carousel .carousel-control-next, .facilities .row .facilities-item .carousel .carousel-inner .carousel-item p {
+    display: none;
+  }
+
+  .container-fluid .news {
+    padding: 0 10vw;
+    color: white;
+  }
+
+  .container-fluid .news .row {
+    margin: 0;
+    color: white;
+  }
+  .container-fluid .news .row .news-item {
+    margin: 3vh 0;
+    color: white;
+  }
+
+  .container-fluid .news .row .news-item .news-content img {
+    margin: 0 auto !important;
+    color: white;
+  }
+
+  .container-fluid .news .row .news-item .news-content h4 {
+    margin-bottom: 1vh;
+  }
+
+  .container-fluid .gallery {
+    height: 2260px;
+  }
+
+  .container-fluid .gallery .gallery-content .gallery-item {
+    margin: 5vh 0;
+  }
+
+  .container-fluid .gallery .gallery-content .gallery-item .wrapper .icon .iconify {
+    margin: 0 2vw;
+  }
+
+  .container-fluid .gallery .gallery-content .gallery-item .wrapper {
+    top: -20vh;
+    padding: 4vh 10vw;
+  }
+
+  .container-fluid .gallery .gallery-content .gallery-item .wrapper h4 {
+    font-size: 20px;
+  }
+  .container-fluid .gallery .gallery-content {
+    margin: 0 3vw;
+  }
+
+  .container-fluid .contact .row .contact-item .row {
+    margin: 2vh 0 !important;
+  }
+
+  .container-fluid .contact .row .contact-item .row div {
+    margin-bottom: 5vh;
+    
+  }
+
+  .container-fluid .contact .row .contact-maps .location-detail {
+    display: none;
+    
+  }
+
+  footer .row .col {
+    margin-bottom: 5vh;
+    
+   }
+
+  .container-fluid footer .credit {
+    margin-top: 0;
+    
+  }
+ 
+}
+
+@media only screen and (min-width:576px) and (max-width: 767px) {
+  .navbar-nav {
+    margin: 5vh 0;
+  }
+
+  .container-fluid .navbar-expand-lg .navbar-nav .nav-item {
+    margin: 1vh 0;
+  }
+
+  .container-fluid .feature .row .feature-item {
+    margin-bottom: 5vh;
+  }
+  
+  .facilities .row .facilities-item .carousel .carousel-indicators {
+    top: 43vh !important;
+  }
+
+  .container-fluid .news {
+    padding: 4vh 10vw;
+  }
+
+  .container-fluid .news .row .news-item .news-content img {
+    height: 150px;
+  }
+
+  .container-fluid .news .row .news-item .news-content h4 {
+    margin: 3vh 0;
+  }
+
+  .container-fluid .gallery {
+    height: 1600px;
+  }
+
+  .container-fluid .gallery .gallery-content {
+    margin: 10vh 10vw;
+  }
+
+  .container-fluid .gallery .gallery-content .gallery-item {
+    margin-bottom: 5vh;
+  }
+  
+  .container-fluid .gallery .gallery-content .gallery-item .wrapper {
+    top: -20vh;
+    padding: 4vh 10vw;
+  }
+
+  .container-fluid .gallery .gallery-content .gallery-item .wrapper .icon .iconify {
+    margin:-0.1vh 0.5vw;
+  }
+
+  .contact .row .contact-item .row div {
+    margin-bottom: 5vh;
+  }
+
+  .container-fluid .contact .row .contact-maps .location-detail {
+    display: none;
+  }
+
+  .container-fluid footer .credit {
+    margin-top: 5vh;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .carousel-background-1 {
+    height: 73vh;
+  }
+
+  .carousel .carousel-inner .carousel-item .wrapper {
+    height: 73vh;
+  }
+
+  .carousel .carousel-inner .carousel-item .wrapper h1 {
+    width: 80%;
+  }
+
+  .container-fluid .feature .row .feature-item .feature-content .feature-title {
+    height: 100px;
+  }
+
+  .container-fluid .facilities .row .facilities-item .facilities-content p {
+    display: none;
+  }
+
+  .container-fluid .facilities .row .facilities-item .carousel .carousel-indicators {
+    top: 31vh;
+  }
+
+  .container-fluid .news {
+    padding: 5vh 10vw;
+  }
+
+  .container-fluid .news .row .news-item .news-content h4 {
+    height: 100px;
+    margin: 3vh 0;
+  }
+
+  .container-fluid .gallery {
+    padding: 5vh 0;
+    height: 1000px;
+  }
+
+  .container-fluid .gallery .gallery-content {
+    margin: 5vh 5vw;
+  }
+
+  .container-fluid .gallery .gallery-content .gallery-item {
+    margin-bottom: 5vh;
+  }
+
+  .container-fluid .gallery .gallery-content .gallery-item .wrapper {
+    top: -20vh;
+    padding: 3vh 2vw;
+  }
+
+  .container-fluid .gallery .gallery-content .gallery-item .wrapper .icon .iconify {
+    margin-top: 0;
+    margin-left: 0.3vh;
+  }
+  .container-fluid .gallery .wave {
+    top: -21vh;
+  }
+}
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <!-- BAGIAN NAVBAR -->
+        <nav class="navbar navbar-expand-lg">
+            <!-- LOGO UNTUK NAVBAR -->
+            <a class="navbar-brand" href="profil.html">
+                <h6 style="color: black;font-weight: bold;"><img src="olip.jpg" class="img-fluid" alt="Logo" />Olivia Azzahra Hrp</h6>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse" style="background-color: black;">
+                <span class="iconify" data-inline="false" data-icon="codicon:three-bars" style="font-size: 24px; color: rgb(0, 0, 0);"></span>
+            </button>
+
+            <!-- MENU NAVBAR -->
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <ul class="navbar-nav mr-auto">
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#beranda">Beranda</a>
+                    </li>
+                    -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#jurusan">Jurusan</a>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#fasilitas">Fasilitas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#kontak">Kontak</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="profil.html">Profil</a>
+                    </li>
+                    
+
+                    <!-- FORM PENCARIAN DI NAVBAR -->
+                    <form class="form-inline">
+                        <input type="text" class="search" placeholder="Cari" />
+                        <button type="submit" class="btn-search">
+                            <!-- <span class="iconify" data-inline="false" data-icon="ant-design:search-outlined"
+                                style="color: #0573ab; font-size: 30px;"></span> -->
+                        </button>
+                    </form>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- BAGIAN CAROUSEL UTAMA-->
+        <section id="carousel-indicators" class="carousel slide" data-ride="carousel">
+            <!-- INDICATOR SLIDER-->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-indicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-indicators" data-slide-to="1"></li>
+            </ol>
+
+            <!-- KONTEN CAROUSEL-->
+            <div id="beranda">
+            <div class="carousel-inner">
+                <div class="carousel-item active carousel-background-1">
+                    <article style="color: yellow; font-weight: bold;" class="wrapper">
+                        <h1>SMK NEGERI 9 MEDAN</h1>
+                        <h6>SMK BISA-HEBAT</h6><br>
+                        
+                    </article>
+                </div>
+                <div class="carousel-item carousel-background-2">
+                    <article style="color: yellow; font-weight: bold;" class="wrapper">
+                        <h1>SMK NEGERI 9 MEDAN</h1>
+                        <h6>SMK BISA-HEBAT</h6><br>
+                    </article>
+                </div>
+            </div>
+        </div>
+            <!-- KONTROLLER CAROUSEL UNTUK BISA NEXT ATAU PREVIOUS-->
+            <a class="carousel-control-prev" href="#carousel-indicators" role="button" data-slide="prev">
+                <span class="iconify" data-inline="false" data-icon="bi:chevron-left"
+                    style="color: #000000; font-size: 70px;"></span>
+            </a>
+            <a class="carousel-control-next" href="#carousel-indicators" role="button" data-slide="next">
+                <span class="iconify" data-inline="false" data-icon="bi:chevron-right"
+                    style="color: #000000; ; font-size: 70px;"></span>
+            </a>
+        </section>
+
+        <!-- BAGIAN INFORMASI SEKOLAH -->
+        <section id="jurusan" class="feature">
+            <div class="row">
+                <!-- ITEM INFORMASI SEKOLAH -->
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 feature-item">
+                    <article class="feature-content">
+                        <!-- <span class="iconify" data-inline="false" data-icon="bx:bx-happy-alt"
+                            style="color: #0573ab; font-size: 100px; display: block; margin: 0 auto;"></span> -->
+                            <img class="jurusan" src="tkj.jpg" alt="" width="90px" height="90px">
+                        <h4 class="feature-title">Teknik Komputer Jaringan</h4>
+                        <p class="feature-description">Teknik komputer, dan jaringan juga membutuhkan pemahaman di bidang teknik listrik, dan ilmu komputer sehingga mampu mengembangkan, dan mengintegrasikan perangkat lunak, dan perangkat keras.</p>
+                    </article>
+                </div>
+               
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 feature-item">
+                    <article class="feature-content">
+                        <!-- <span class="iconify" data-inline="false" data-icon="map:mosque"
+                            style="color: #0573ab; font-size: 100px; display: block; margin: 0 auto;"></span> -->
+                            <img class="jurusan" src="rpl.jpg" alt="" width="90px" height="90px">
+                        <h4 class="feature-title">Rekayasa Perangkat Lunak</h4>
+                        <p class="feature-description">Rekayasa perangkat lunak (RPL, atau dalam bahasa Inggris: Software Engineering atau SE) adalah satu bidang profesi yang mendalami cara-cara pengembangan perangkat lunak termasuk pembuatan, pemeliharaan, manajemen organisasi pengembanganan perangkat lunak dan manajemen kualitas.</p>
+                    </article>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 feature-item">
+                    <article class="feature-content">
+                        <!-- <span class="iconify" data-inline="false" data-icon="la:basketball-ball-solid"
+                            style="color: #0573ab; font-size: 100px; display: block; margin: 0 auto;"></span> -->
+                            <img class="jurusan" src="mulmed.jpeg" alt="" width="90px" height="90px">
+                        <h4 class="feature-title">Multimedia</h4>
+                        <p class="feature-description">Multimedia yaitu gabungan dari seminimalnya sebuah media diskrit dan sebuah media kontinu. Media diskrit adalah sebuah media di mana validitas datanya tidak tergantung dari kondisi waktu, termasuk di dalamnya teks dan grafik.</p>
+                    </article>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 feature-item">
+                        <article class="feature-content">
+                            <!-- <span class="iconify" data-inline="false" data-icon="la:basketball-ball-solid"
+                                style="color: #0573ab; font-size: 100px; display: block; margin: 0 auto;"></span> -->
+                                <img class="jurusan" src="desain.jpeg" alt="" width="90px" height="90px">
+                            <h4 class="feature-title">Desain Komunikasi Visual</h4>
+                            <p class="feature-description">DKV adalah salah satu cabang ilmu desain yang mempelajari konsep komunikasi melalui berbagai media yang dapat berupa gambar, tatanan huruf, video, media interaktif, dan media visual lainnya agar gagasan yang disampaikan dapat diterima dengan baik, lebih menarik, atau sesuai dengan kebutuhan lainnya ketika diterima oleh penerima pesan.
+                            </p>
+                        </article>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 feature-item">
+                    <article class="feature-content">
+                        <!-- <span class="iconify" data-inline="false" data-icon="la:basketball-ball-solid"
+                            style="color: #0573ab; font-size: 100px; display: block; margin: 0 auto;"></span> -->
+                            <img class="jurusan" src="animasi.jpeg" alt="" width="90px" height="90px">
+                        <h4 class="feature-title">Animasi</h4>
+                        <p class="feature-description">Animasi adalah film yang merupakan karya tangan (gambar) yang bergerak. Pada awal penemuannya, animasi dibuat dari berlembar-lembar kertas gambar yang kemudian di-"putar" sehingga muncul efek gambar bergerak. Dengan bantuan komputer dan grafika komputer, pembuatan film animasi menjadi sangat mudah dan cepat. Bahkan akhir-akhir ini lebih banyak bermunculan animasi 3D daripada animasi 2D.</p>
+                    </article>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 feature-item">
+                        <article class="feature-content">
+                            <!-- <span class="iconify" data-inline="false" data-icon="la:basketball-ball-solid"
+                                style="color: #0573ab; font-size: 100px; display: block; margin: 0 auto;"></span> -->
+                                <img class="jurusan" src="peksos.jpeg" alt="" width="90px" height="90px">
+                            <h4 class="feature-title">Pekerja Sosial</h4>
+                            <p class="feature-description">Pekerja sosial (Social worker) merupakan profesi yang memberikan bantuan ataupun pertolongan berupa pelayanan pada individu, kelompok, maupun masyarakat yang membutuhkan. Pekerja sosial juga bisa dimaknai sebagai profesi pelayanan sosial yang bermuara pada kerja kemanusiaan, atau disebut dengan istilah helping profession.</p>
+                        </article>
+                        </div>
+            </div>
+        </section>
+
+        <!-- BAGIAN BERITA -->
+        <section id="fasilitas" class="gallery">
+            <h4>SARANA DAN PRASARANA</h4>
+             <div class="row gallery-content">
+               
+            <p class="subtitle">
+                <span><br></span>
+                <br>
+            </p><br>
+
+            <!-- KONTEN BERITA -->
+            <div class="row">
+                <div class="col news-item">
+                    <article class="news-content">
+                        <img src="dkv3.jpg" class="img-fluid" alt="News 1">
+                        <span></span>
+                        <h4>Laboratorium DKV</h4><br>
+                        <p style="text-align: center;">Lab DKV merupakan fasilitas untuk siswa/i jurusan Desain Komunikasi Visual yang ada di SMK Negeri 9 Medan. Dapat kita lihat dalam gambar tersebut terdapat berbagai alat-alat yang biasa digunakan untuk desain dan percetakan.</p>
+                    </article>
+                </div>
+                <div class="row gallery-content">
+               
+                    <p class="subtitle">
+                        <span><br></span>
+                        <br>
+                    </p><br>
+        
+                <div class="row">
+                <div class="col news-item">
+                    <article class="news-content">
+                        <img src="rpl2.jpg" class="img-fluid" alt="News 1">
+                        <h4>Laboratorium Komputer</h4><br>
+                        <p style="text-align: center;">Lab Komputer merupakan fasilitas untuk siswa/i jurusan Rekayasa Perangkan Lunak dan Teknik Komputer Jaringan yang ada di SMK Negeri 9 Medan. Dapat kita lihat dalam gambar tersebut terdapat banyak komputer yang dapat digunakan.</p>
+                    </article>
+                </div>
+               
+                <div class="row gallery-content">
+               
+                    <p class="subtitle">
+                        <span><br></span>
+                        <br>
+                    </p><br>
+        
+                <div class="row">
+                <div class="col news-item">
+                    <article class="news-content">
+                        <img src="bcf.jpg" class="img-fluid" alt="News 1">
+                        <h4>Laboratorium Multimedia</h4><br>
+                        <p style="text-align: center;">Lab Komputer merupakan fasilitas untuk siswa/i jurusan Multimedia yang ada di SMK Negeri 9 Medan. Dapat kita lihat terdapat ruangan podcast.</p>
+                    </article>
+                </div>
+                <div class="row gallery-content">
+               
+                    <p class="subtitle">
+                        <span><br></span>
+                        <br>
+                    </p><br>
+        
+                <div class="row">
+                <div class="col news-item">
+                    <article class="news-content">
+                        <img src="peksos2.jpg" class="img-fluid" alt="News 1" width="360px" style="">
+                        <h4>Laboratorium Pekerja Sosial</h4><br>
+                        <p style="text-align: center;">Lab Komputer merupakan fasilitas untuk <br> siswa/i jurusan Pekerja Sosial yang ada di <br> SMK Negeri 9 Medan. Dapat kita lihat <br> terdapat banyak peralatan kesehatan.</p>
+                    </article>
+                </div>
+                <div class="row gallery-content">
+               
+                    <p class="subtitle">
+                        <span><br></span>
+                        <br>
+                    </p><br>
+        
+                <div class="row">
+                <div class="col news-item">
+                    <article class="news-content">
+                        <img src="perpus.jpg"class="img-fluid" alt="News 1" width="365px" style="">
+                        <h4>Perpustakaan</h4><br>
+                        <p style=" text-align: center;">Perpustakaan SMKN 9 Medan menyediakan <br> tempat membaca dan buku-buku yang <br> lengkap dan dapat dipinjam kepada <br> pengurus yang ada di perpustakaan <br> tersebut.</p>
+                    </article>
+                </div>
+                <div class="row gallery-content">
+               
+                    <p class="subtitle">
+                        <span><br></span>
+                        <br>
+                    </p><br>
+        
+                <div class="row">
+                <div class="col news-item">
+                    <article class="news-content">
+                        <img src="lab jepang.jpeg" class="img-fluid" alt="News 1" width="370px" style="" >
+                        <h4>Lab Jepang</h4><br>
+                        <p style=" text-align: center;">Laboratorium atau ruang khusus yang <br> digunakan untuk tujuan pendidikan dan <br> aktivitas budaya yang terkait dengan <br> Jepang di sekolah.</p>
+                    </article>
+                </div>
+                <div class="row gallery-content">
+               
+                    <p class="subtitle">
+                        <span><br></span>
+                        <br>
+                    </p><br>
+        
+                <div class="row">
+                    <div class="col news-item">
+                        <article class="news-content">
+                            <img src="kantin1.jpeg" class="img-fluid" alt="News 1" width="373px" style="">
+                            <h4>Kantin</h4><br>
+                            <p style=" text-align: center;">Kantin SMKN 9 terdiri dari 6 kantin yang <br> disatukan dalam satu bangunan tersendiri. <br> Disini menjual makanan yang <br> beragam jenisnya.</p>
+                        </article>
+                    </div>
+                    <div class="row gallery-content">
+               
+                        <p class="subtitle">
+                            <span><br></span>
+                            <br>
+                        </p><br>
+            
+                    <div class="row">
+                    <div class="col news-item">
+                        <article class="news-content">
+                            <img src="aula1.jpeg" class="img-fluid" alt="News 1" width="375px" style="">
+                            <h4>Aula SMK Negeri 9 Medan</h4><br>
+                            <p style=" text-align: center;">Aula SMK Negeri 9 Medan merupakan titik <br> kumpul pertemuan siswa/siswa, <br> bapak/ibu guru, dan tamu yang <br> datang ke SMKN 9 Medan.</p>
+                        </article><br>
+                    </div>
+                    <div class="row gallery-content">
+               
+                        <p class="subtitle">
+                            <span><br></span>
+                            <br>
+                        </p><br>
+            
+                    <div class="row">
+                    <div class="col news-item">
+                        <article class="news-content">
+                            <img src="mushola.jpeg" class="img-fluid" alt="News 1" width="365px" style="margin-left: 16px;">
+                            <h4>Mushola</h4><br>
+                            <p style=" text-align: center; margin-left: 16px;">SMKN 9 Medan menyediakan mushola untuk <br> tempat beribadah para muslim di lingkungan <br> sekolah.</p>
+                        </article>
+                    </div>
+            </div>
+        </section>
+
+        <!-- BAGIAN GALERI -->
+        <section class="gallery">
+            <div class="row gallery-content">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 gallery-item">
+                   
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 gallery-item">
+                   
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 gallery-item">
+                   
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 gallery-item">
+                  
+                    <div class="wrapper">
+                        <div class="icon">
+                            <span class="iconify" data-inline="false" data-icon="bi:chevron-right"
+                                style="color: #0573ab; ; font-size: 30px;"></span>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+          
+        </section>
+
+        <!-- BAGIAN KONTAK -->
+        <section id="kontak" class="contact">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7 col-xl-7 contact-item">
+                    <h4>ada pertanyaan seputar SMK Negeri 9 Medan?</h4>
+                    <p class="subtitle">tanyakan saja melalui form di bawah ini</p>
+                    <div class="row">
+                        <!-- FORM KONTAK -->
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                            <form method="post">
+                                <div class="form-group">
+                                    <label>email</label>
+                                    <input type="email" class="form-control" placeholder="Email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>Judul</label>
+                                    <input type="text" class="form-control" placeholder="Judul" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>pesan</label>
+                                    <textarea class="form-control" placeholder="Pesan" required></textarea>
+                                </div>
+                                <button type="submit" class="btn-contact">Kirim Pesan</button>
+                            </form>
+                        </div>
+
+                        <!-- INFORMASI SOSIAL MEDIA SEKOLAH-->
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                            <p>Anda Juga Bisa Mengirim Pertanyaan Kepada Kami Melalui Kontak Di Bawah Ini</p>
+                            <p class="social-media-info">
+                                <span class="iconify" data-inline="false" data-icon="ant-design:phone-filled"
+                                    style="color: #0099ff; font-size: 25px;"></span> 0812 6210 3883
+                            </p>
+                            <p class="social-media-info">
+                                <span class="iconify" data-inline="false" data-icon="dashicons:whatsapp"
+                                    style="color: #0099ff; font-size: 25px;"></span> 0812 6210 3883
+                            </p>
+                            <p class="social-media-info">
+                                <span class="iconify" data-inline="false" data-icon="ant-design:facebook-filled"
+                                    style="color: #0099ff; font-size: 25px;"></span> SMKN 9 Medan
+                            </p>
+                            <p class="social-media-info">
+                                <span class="iconify" data-inline="false" data-icon="ant-design:instagram-filled"
+                                    style="color: #0099ff; font-size: 25px;"></span> SMKN 9 Medan
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- PETA SEKOLAH -->
+                <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 contact-maps">
+                    <div style="width: 100%"><iframe width="100%" height="600" frameborder="0" scrolling="no"
+                            marginheight="0" marginwidth="0"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.9903858617317!2d98.61830227324444!3d3.5896796502903157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30312e4f46b5ab19%3A0x447dc6ab3d465c1e!2sSekolah%20Menengah%20Kejuruan%20Negeri%209%20Medan!5e0!3m2!1sid!2sid!4v1697216042565!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></https:>
+                    </div>
+                    <div class="location-detail">
+                        <div class="row">
+                            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 image">
+                                <img src="asset/cover.jpg" alt="location-image">
+                            </div>
+                            <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 col-xl-5 location-name">
+                                <p><b>SMK Negeri 9 Medan</b></p>
+                                <p>Jl. Patriot</p>
+                            </div>
+                            <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 col-xl-5 location-guide">
+                                <div class="get-guide">
+                                    <p>
+                                        <span class="iconify" data-inline="false" data-icon="jam:gps-f"
+                                            style="color: #ffffff; font-size: 15px;"></span> Petunjuk
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="row">
+                <div class="col">
+                    <h5>SMK Negeri 9 Medan</h5>
+                    <!-- <a href="#">tentang kami</a>
+                    <a href="#">visi misi</a>
+                    <a href="#">karier</a> -->
+                </div>
+                <div class="col">
+                    <h5>sitelink</h5>
+                    <a href="#">home</a>
+                    <a href="#">galeri</a>
+                    <a href="#">karier</a>
+                </div>
+                <div class="col">
+                    <!-- <h5>sosial media</h5> -->
+                    <!-- <a href="#">
+                        <span class="iconify" data-inline="false" data-icon="ant-design:facebook-filled"
+                            style="color: #ffffff; font-size: 25px;"></span> 
+                    </a> -->
+                </div>
+            </div>
+           
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+</body>
+</html>
